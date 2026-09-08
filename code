@@ -1,0 +1,45 @@
+<!DOCKTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h1>Hangman!</h1>
+    <h3>just without  the stickfigure</h3>
+    <script>
+      //cretes a question and picks a random word
+      var name = prompt(What's your name?);
+        console.log("Hello" + name);
+      var words = [
+        "bumfuzzle"
+        "collywobbles"
+        "taradiddle"
+      "eucatathrophe"
+      ]
+      var word = words[Math.floor(math.random()* words.length)];
+      var answerArray = [];
+      for (var i = 0; i<word.length; i++){
+        answerArray[i] = "_"
+      }
+      var remainingLetters = word.length;
+      while (remainingLetters > 0){
+        alert(answerArray.join(""));
+        var guess = prompt("guess a letter or click cancel to stop playing.");
+        if (guess === null) {
+          break;
+        }else if (guess.length !==1){
+          alert("please enter a single letter")
+        }else{
+        for (var j = 0; j < word.length; j++) {
+          if (word[j] === guess){
+            answerArray[j] = guess;
+            remainingLetters--;
+          }
+        }
+        }
+      }
+      alert(answerArray.join(" "))
+      alert("good job the answer was" + word)
+    </script>
+  </body>
+</html>
