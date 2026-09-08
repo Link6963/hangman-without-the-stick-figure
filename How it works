@@ -1,0 +1,8 @@
+# how it works
+Basicly it creates a varieble with the list of words and uses math.floor and math.random to generate a random word from that list. Before that it uses prompt
+to ask what your name is. It then uses a for loop to make it so that every time i is less than the number of letters in the mystery word itcreates 1 underscore
+until  i is over the amount of letters in the mystery word. It uses a varieble to know how many underscores are not guessed yet. It uses a while loop to  to
+loop checking if the remaining letters are under 0 and if it is it joins all of the correctly guessed letters to form the word. It creates a varieble  called 
+guess and it asks if you want to stop playing or guesss a letter. If it has no response it breaks the game. If the guess is over 1 letter it says to enter a
+single letter. it then loops a j varieble and as long as j is under the word length it adds to j until j is your guess. After it  says good job when you guess
+the word.
